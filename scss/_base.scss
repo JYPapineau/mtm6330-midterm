@@ -1,0 +1,24 @@
+$textColor: rgb(77, 105, 117);
+
+html{
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: #A7A390;
+  color: $textColor;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@font-face{
+  font-family: 'pieces of eight';
+  src: url('../fonts/Pieces\ of\ Eight.ttf');
+}

@@ -1,0 +1,103 @@
+@import 'normalize';
+@import 'base';
+
+/* Global variable scope */
+$height: 70px;
+$textColor: rgb(77, 105, 117);
+$navBarColor: rgb(193, 160, 120);
+$navBorderColor: rgb(166,107,52);
+
+.navbar{
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: $navBarColor;
+  border-bottom: 3px solid lighten(desaturate($navBorderColor, 15%), 12%);
+  height: $height;
+
+  &::before{
+    content: '';
+    border-top: 2px solid transparent;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  .logoText{
+    color: $textColor;
+    flex-grow: 1;
+    font-family: "pieces of eight";
+    font-size: 3rem;
+    padding-left: 4rem;
+  }
+
+  .logo{
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding-left: 1rem;
+    background-color: $navBarColor;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    .menu-item{
+      border-bottom: 2px solid transparent;
+      flex-grow: 1;
+      color: darken(desaturate($textColor, 40%), 20%);
+      line-height: $height;
+      height: $height;
+      text-align: center;
+
+      &.active{
+        background-color: lighten(desaturate($navBarColor, 5%), 7%); 
+        border-color: $navBorderColor;
+      }
+
+      a{
+        color: $textColor;
+        text-decoration: none;
+        font-family: "segeo ui";
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        
+      }
+
+      a:visited{
+        color: $textColor;
+      }
+    }
+
+  }
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+  .galleries{
+    display: flex;
+    justify-content: space-around;
+
+    .img{
+      display: flex;
+      height: 80px;
+      width: 100px;
+
+      img{
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+
+
+}
