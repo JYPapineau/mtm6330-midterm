@@ -1,0 +1,70 @@
+fieldset{
+  border: none;
+  width: 100%;
+}
+
+input,textarea{
+  margin: 0.5rem 0;
+}
+
+input[type="checkbox"]{
+  margin: 0;
+}
+
+input, textarea{
+  padding: 0.5rem;
+}
+
+input[type="text"],
+textarea, label{
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: 'Slabo 27px', serif;
+}
+textarea{
+  font-size: 1rem;
+}
+
+input[type="submit"]{
+  width: 30%;
+  height: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+textarea{
+  height: 3.5rem;
+}
+
+.col2, .col1{
+  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+iframe{
+  width: 100%;
+  height: 25rem;
+  margin-top: 0.5rem;
+  border: 1px solid black;
+}
+
+/*-----------------Styling for Tablet/Desktop size------------------*/
+
+@media all and (min-width: 768px){
+  .col1, .col2{
+      width: 48%;
+      float: left;
+  }
+  
+  .col1{
+      margin-right: 2%;
+  }
+  
+  hr{
+    display: none;
+  }
+
+}

@@ -317,6 +317,15 @@ body {
   src: url("../fonts/Pieces of Eight.ttf"); }
 
 /* Global variable scope */
+.fun-font {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3rem; }
+
+.fancy-font {
+  font-family: 'Marck Script', cursive;
+  font-size: 1.5rem;
+  line-height: 2.0rem; }
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -370,15 +379,51 @@ body {
 
 .main {
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  flex-direction: column; }
+  .main .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: 700;
+    margin-top: 6rem;
+    width: 100%; }
   .main .galleries {
     display: flex;
-    justify-content: space-around; }
-    .main .galleries .img {
+    justify-content: space-around;
+    width: 100%; }
+    .main .galleries .gallery {
       display: flex;
-      height: 80px;
-      width: 100px; }
-      .main .galleries .img img {
+      justify-content: space-around;
+      align-items: center;
+      width: calc(100%/4); }
+      .main .galleries .gallery img {
         height: auto;
-        width: auto; }
+        width: 80%;
+        border-radius: 10px; }
+      .main .galleries .gallery a {
+        text-decoration: none; }
+        .main .galleries .gallery a figure {
+          margin: 0 auto;
+          position: relative;
+          z-index: 100;
+          font-family: sans-serif;
+          font-weight: 600;
+          font-size: 1.5rem;
+          letter-spacing: 0.1rem;
+          text-align: center; }
+          .main .galleries .gallery a figure figcaption {
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            color: #4d6975;
+            text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.8); }
+      .main .galleries .gallery a:link,
+      .main .galleries .gallery a:active,
+      .main .galleries .gallery a:visited {
+        color: #4d6975; }
+      .main .galleries .gallery a:hover {
+        opacity: 0.85; }

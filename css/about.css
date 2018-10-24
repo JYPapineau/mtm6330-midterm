@@ -1,0 +1,93 @@
+main{
+  margin-top: 6rem;
+}
+
+.capTxt{
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.jy{
+  width: 50%;
+  max-width: 300px;
+  float: right;
+  margin: 0 0px 0 10px;
+  
+}
+
+.jy>img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.artist{
+  height: auto;
+  width: 40px;
+  border-radius: 10px;
+}
+
+
+
+.col-left{
+  line-height: 1.3rem;
+  text-align: left;
+}
+
+.col-right{
+  margin-top: 4rem;
+  width: 100%;
+}
+
+td,th{
+  width: 70px;
+  padding: 0.2rem;
+  background: none;
+}
+
+table{
+  text-align: center;
+  height: 300px;
+  margin: 0 auto;
+}
+
+caption{
+  margin-bottom: 0.5rem;
+}
+
+.social{
+  width: 60%;
+  border: none;
+}
+
+.artist{
+  width: 100%;
+  border: none;
+}
+
+th>a, td>a{
+  background: none;
+}
+
+/*-----------------Styling for Tablet/Desktop size------------------*/
+
+@media all and (min-width: 768px){
+
+  .col-left, .col-right{
+      width: 48%;
+      float: left;
+  }
+  .col-left{
+      margin-right: 4%;
+  }
+  
+  table{
+      margin-top: 3rem;
+  }
+  
+  hr{
+    display: none;
+  }
+  
+}

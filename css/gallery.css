@@ -1,13 +1,34 @@
+/* $height: 70px;
+$textColor: rgb(77, 105, 117);
+$navBarColor: rgb(193, 160, 120);
+$navBorderColor: rgb(166,107,52); */
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; 
+}
+
 .container {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(2, 200px);
+
+  margin-top: 6rem;
 }
 
 .container>div>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+
+.container>div>img:hover{
+  opacity: 0.75;
+  box-shadow: 5px 5px 10px #000000;
 }
